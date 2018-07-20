@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 imageView.setImageBitmap(newBitMap);
 
-                Toast.makeText(this, grayMat.toString(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, grayMat.toString(), Toast.LENGTH_LONG).show();
 
                 LeNet5 leNet5 = new LeNet5(getAssets());
                 int result = leNet5.Recognize(smallMat);
