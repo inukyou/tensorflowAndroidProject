@@ -2,7 +2,16 @@
 本程序是一个基于tensorflow的手绘图形识别软件
 ，目前本程序只能识别：鱼、花、圆圈、猫四种图形
 
-使用了opencv将获取到的图像缩小到28*28并将其灰度化
+六、技术实现方案
+1.使用tensorflow构建lenet5网络并进行训练，以官方的mnist项目作为参考，且最后将训练的模型和参数保存在pb文件中。
+
+2.使用了PaletteView开源项目实现绘图板的功能。
+
+3.android端使用tensorflow读取pb文件，并对输入的图像进行识别。
+
+4.Android使用opencv将获得的图像灰度化并缩小成为28*28的大小。
+
+5.训练所用的图像数据在谷歌的Quick draw项目上下载。
 
 
 训练模型和代码https://github.com/inukyou/tensorflow_DrawTrain
